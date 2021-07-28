@@ -1,3 +1,7 @@
+provider "aws" {
+  region = var.region
+}
+
 locals {
   role_sts_externalid = flatten([var.role_sts_externalid])
 }
