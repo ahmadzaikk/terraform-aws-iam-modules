@@ -9,7 +9,10 @@ variable "trusted_role_arns" {
   type        = list(string)
   default     = []
 }
-
+variable "region" {
+  type        = string
+  description = "region"
+}
 variable "trusted_role_services" {
   description = "AWS Services that can assume these roles"
   type        = list(string)
