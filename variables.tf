@@ -6,8 +6,7 @@ variable "trusted_role_actions" {
 
 variable "trusted_role_arns" {
   description = "ARNs of AWS entities who can assume these roles"
-  type        = list(string)
-  default     = []
+  type        = string
 }
 variable "region" {
   type        = string
